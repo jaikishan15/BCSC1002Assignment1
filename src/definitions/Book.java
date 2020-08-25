@@ -11,11 +11,24 @@ public class Book {
     private String nameOfTheAuthorOfBook;
     private String ISBNNoOFBook;
 
+    //*
+    // this method returns the name of the book
+    //
     public String getNameOfTheBook() {
         return nameOfTheBook;
     }
 
+    //*
+    // this method returns the name of the author of the book
+    // *
     public String getNameOfTheAuthorOfBook() {
         return nameOfTheAuthorOfBook;
+    }
+
+    //*
+    // *this mehtod returns the ISBN no of the book
+    // *
+    public String getISBNNoOFBook() {
+        return ISBNNoOFBook;
     }
 }

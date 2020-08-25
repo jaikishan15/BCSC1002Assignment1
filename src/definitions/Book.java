@@ -18,6 +18,10 @@ public class Book {
         return nameOfTheBook;
     }
 
+    public void setNameOfTheBook(String nameOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+    }
+
 
     //*
     // this method returns the name of the author of the book

@@ -22,12 +22,15 @@ public class Book {
         this.nameOfTheBook = nameOfTheBook;
     }
 
-
     //*
     // this method returns the name of the author of the book
     // *
     public String getNameOfTheAuthorOfBook() {
         return nameOfTheAuthorOfBook;
+    }
+
+    public void setNameOfTheAuthorOfBook(String nameOfTheAuthorOfBook) {
+        this.nameOfTheAuthorOfBook = nameOfTheAuthorOfBook;
     }
 
     //*
@@ -36,4 +39,9 @@ public class Book {
     public String getISBNNoOFBook() {
         return ISBNNoOFBook;
     }
+
+    public void setISBNNoOFBook(String ISBNNoOFBook) {
+        this.ISBNNoOFBook = ISBNNoOFBook;
+    }
+
 }

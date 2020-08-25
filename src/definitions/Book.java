@@ -9,7 +9,13 @@ package definitions;
 public class Book {
     private String nameOfTheBook;
     private String nameOfTheAuthorOfBook;
-    private String ISBNNoOFBook;
+    private String iSBNNoOfTheBook;
+
+    public Book(String nameOfTheBook, String nameOfTheAuthorOfBook, String iSBNNoOfTheBookN) {
+        this.nameOfTheBook = "Snowdrops";
+        this.nameOfTheAuthorOfBook = "A.D Miller";
+        this.iSBNNoOfTheBook = "978142411960";
+    }
 
     //*
     // this method returns the name of the book
@@ -36,12 +42,12 @@ public class Book {
     //*
     // *this mehtod returns the ISBN no of the book
     // *
-    public String getISBNNoOFBook() {
-        return ISBNNoOFBook;
+    public String getiSBNNoOfTheBook() {
+        return iSBNNoOfTheBook;
     }
 
-    public void setISBNNoOFBook(String ISBNNoOFBook) {
-        this.ISBNNoOFBook = ISBNNoOFBook;
+    public void setiSBNNoOfTheBook(String iSBNNoOfTheBook) {
+        this.iSBNNoOfTheBook = iSBNNoOfTheBook;
     }
 
 }

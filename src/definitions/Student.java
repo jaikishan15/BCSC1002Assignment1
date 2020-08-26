@@ -10,7 +10,6 @@ public class Student {
     private String nameOfTheStudent;
     private long universityRollNoOfStudent;
     private int noOfBooksIssuedByStudent;
-    private int numberOfBooksIssued;
     private Book[] namesOfTheBooksIssued;
 
     public String getNameOfTheStudent() {
@@ -29,5 +28,14 @@ public class Student {
         this.universityRollNoOfStudent = universityRollNoOfStudent;
     }
 
+    public int getNoOfBooksIssuedByStudent() {
+        return noOfBooksIssuedByStudent;
+    }
+
+    public void setNoOfBooksIssuedByStudent(int noOfBooksIssuedByStudent) {
+        this.noOfBooksIssuedByStudent = noOfBooksIssuedByStudent;
+    }
+
 
 }
+

@@ -63,6 +63,9 @@ public class Book {
         this.iSBNNoOfTheBook = iSBNNoOfTheBook;
     }
 
+    //*
+    // * toString() method
+    // *
     public String toString() {
         return String.format("nameOfTheBook: %s, nameOfTheAuhtorOfBook: %s, iSBNNoOfTheBook: %s",
                 getNameOfTheBook(), getNameOfTheAuthorOfBook(), getiSBNNoOfTheBook());

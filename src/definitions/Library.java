@@ -18,6 +18,9 @@ public class Library {
         }
     }
 
+    //*
+    // * this method returns the booksCurrentlyAvailable
+    // *
     public Book[] getBooksCurrentlyAvailable() {
         return booksCurrentlyAvailable;
     }
@@ -26,6 +29,9 @@ public class Library {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
 
+    //*
+    // * equals() method
+    // *
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -34,12 +40,18 @@ public class Library {
         return Arrays.equals(getBooksCurrentlyAvailable(), library.getBooksCurrentlyAvailable());
     }
 
+    //*
+    // * hashCode() method
+    // *
     @Override
     public int hashCode() {
         return Arrays.hashCode(getBooksCurrentlyAvailable());
 
     }
 
+    //*
+    // * toString() method
+    // *
     @Override
     public String toString() {
         return Arrays.toString(booksCurrentlyAvailable);

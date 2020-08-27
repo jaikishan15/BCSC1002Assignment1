@@ -7,6 +7,7 @@
 package definitions;
 import java.util.Objects;
 
+
 public class Book {
     private String nameOfTheBook;
     private String nameOfTheAuthorOfBook;
@@ -54,12 +55,10 @@ public class Book {
     // *this mehtod returns the ISBN no of the book
     // *
     public String getiSBNNoOfTheBook() {
-
         return iSBNNoOfTheBook;
     }
 
     public void setiSBNNoOfTheBook(String iSBNNoOfTheBook) {
-
         this.iSBNNoOfTheBook = iSBNNoOfTheBook;
     }
 

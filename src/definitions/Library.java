@@ -22,7 +22,7 @@ public class Library {
     // * this method returns the booksCurrentlyAvailable
     // *
     public Book[] getBooksCurrentlyAvailable() {
-        return booksCurrentlyAvailable;
+        return booksCurrentlyAvailable.clone();
     }
 
     public void setBooksCurrentlyAvailable(Book[] booksCurrentlyAvailable) {
@@ -46,7 +46,6 @@ public class Library {
     @Override
     public int hashCode() {
         return Arrays.hashCode(getBooksCurrentlyAvailable());
-
     }
 
     //*
@@ -55,9 +54,7 @@ public class Library {
     @Override
     public String toString() {
         return Arrays.toString(booksCurrentlyAvailable);
-
     }
-
 }
 
 

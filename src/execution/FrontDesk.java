@@ -20,6 +20,24 @@ public class FrontDesk {
         Scanner scanner = new Scanner(System.in);
         int studentInput;
         Student myStudent = new Student();
+        do {
+            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n");
+            System.out.println("how may can i help you today");
+            System.out.println("1.issue a new book for me");
+            System.out.println("2.Return previously issues book for me");
+            System.out.println("3.show me all my issues books");
+            System.out.println("4.Exit");
+            System.out.println("Please enter your choice from 1..6");
+            studentInput = scanner.nextInt();
+            switch (studentInput) {
+                case ISSUE_A_NEW_BOOK_FOR_ME:
+                    System.out.println("enter the name of the book you want");
+                    scanner.nextLine();
+                    String nameOfTheBook = scanner.nextLine();
+                    myStudent.issueNewBook(nameOfTheBook);
+
+            }
+        }
     }
 }
 

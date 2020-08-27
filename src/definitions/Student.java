@@ -119,7 +119,7 @@ public class Student {
     }
 
     //*
-    // * this ,ethod checks all the issue books to the student
+    // * this method checks all the issue books to the student
     // *@para nameOfAllIssueBooks the names of all the issue books
     public void allIssuesBooks(String nameOfAllIssueBooks) {
         System.out.println(nameOfAllIssueBooks);

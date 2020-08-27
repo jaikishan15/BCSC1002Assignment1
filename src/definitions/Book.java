@@ -20,7 +20,7 @@ public class Book {
     }
 
     public Book() {
-        this.nameOfTheBook = "Gulliver's Travels";
+        this.nameOfTheBook = "Gulliver's  Travels";
         this.nameOfTheAuthorOfBook = "Johnathan Swift";
         this.iSBNNoOfTheBook = "453687446764";
     }

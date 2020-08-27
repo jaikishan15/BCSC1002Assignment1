@@ -7,8 +7,11 @@
 package execution;
 
 public class FrontDesk {
-    public static void main(String[] args) {
+    private static final int ISSUE_A_NEW_BOOK_FOR_ME = 1;
+}
 
+    public static void main(String[] args) {
+    }
 
 
 

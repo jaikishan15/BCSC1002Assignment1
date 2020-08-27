@@ -37,6 +37,7 @@ public class Library {
     @Override
     public int hashCode() {
         return Arrays.hashCode(getBooksCurrentlyAvailable());
+
     }
 
     @Override

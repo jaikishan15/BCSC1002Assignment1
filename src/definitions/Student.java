@@ -103,5 +103,26 @@ public class Student {
                 ", namesOfTheBooksIssued=" + Arrays.toString(namesOfTheBooksIssued) +
                 '}';
     }
+
+    //*
+    // * this method checks the name of the book student wants
+    // * @para name the name of the book student wants
+    public void issueNewBook(String nameOfBook) {
+        System.out.println(nameOfBook);
+    }
+
+    //*
+    // * this method checks the name of the books the student wants to return.
+    // *@para nameOfBookToBeReturned the names of the books to be returned
+    public void returnBooks(String nameOfBookToBeReturned) {
+        System.out.println(nameOfBookToBeReturned);
+    }
+
+    //*
+    // * this ,ethod checks all the issue books to the student
+    // *@para nameOfAllIssueBooks the names of all the issue books
+    public void allIssuesBooks(String nameOfAllIssueBooks) {
+        System.out.println(nameOfAllIssueBooks);
+    }
 }
 

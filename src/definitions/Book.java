@@ -25,16 +25,15 @@ public class Book {
         this.iSBNNoOfTheBook = "4536874467";
     }
 
+
     //*
     // this method returns the name of the book
     //
     public String getNameOfTheBook() {
-
         return nameOfTheBook;
     }
 
     public void setNameOfTheBook(String nameOfTheBook) {
-
         this.nameOfTheBook = nameOfTheBook;
     }
 

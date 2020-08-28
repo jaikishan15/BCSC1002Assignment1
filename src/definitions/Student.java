@@ -16,31 +16,6 @@ public class Student {
     private Book[] namesOfTheBooksIssued = new Book[10];
     private int numberOfBooks = 0;
 
-    public String getNameOfTheStudent() {
-        return nameOfTheStudent;
-    }
-
-    public void setNameOfTheStudent(String nameOfTheStudent) {
-        this.nameOfTheStudent = nameOfTheStudent;
-    }
-
-    public long getuniversityRollNoOfStudent() {
-        return universityRollNoOfStudent;
-    }
-
-    public void setUniversityRollNoOfStudent(long universityRollNoOfStudent) {
-        this.universityRollNoOfStudent = universityRollNoOfStudent;
-    }
-
-    public int getNoOfBooksIssuedByStudent() {
-        return noOfBooksIssuedByStudent;
-    }
-
-    public void setNoOfBooksIssuedByStudent(int noOfBooksIssuedByStudent) {
-        this.noOfBooksIssuedByStudent = noOfBooksIssuedByStudent;
-    }
-
-
     public Student() {
         for (int i = 0; i < namesOfTheBooksIssued.length; i++) {
             namesOfTheBooksIssued[i] = new Book("Book " + (i + 1));
@@ -51,7 +26,39 @@ public class Student {
         this.namesOfTheBooksIssued = namesOfTheBooksIssued;
     }
 
+    public String getNameOfTheStudent() {
+        return nameOfTheStudent;
+    }
 
+    public void setNameOfTheStudent(String nameOfTheStudent) {
+        this.nameOfTheStudent = nameOfTheStudent;
+    }
+
+    //*
+    // * this method returns the universityRollNoOfStudent
+    // *
+    public long getuniversityRollNoOfStudent() {
+        return universityRollNoOfStudent;
+    }
+
+    public void setUniversityRollNoOfStudent(long universityRollNoOfStudent) {
+        this.universityRollNoOfStudent = universityRollNoOfStudent;
+    }
+
+    //*
+    // * this method returns the noOfBooksIssuedbyTheStudent
+    // *
+    public int getNoOfBooksIssuedByStudent() {
+        return noOfBooksIssuedByStudent;
+    }
+
+    public void setNoOfBooksIssuedByStudent(int noOfBooksIssuedByStudent) {
+        this.noOfBooksIssuedByStudent = noOfBooksIssuedByStudent;
+    }
+
+    //*
+    // * this method returns the nameOfTheBooksIssued
+    // *
     public Book[] getNamesOfTheBooksIssued() {
         return namesOfTheBooksIssued.clone();
     }
@@ -60,6 +67,9 @@ public class Student {
         this.namesOfTheBooksIssued = namesOfTheBooksIssued;
     }
 
+    //*
+    // *equals() method
+    // *
 
     @Override
     public boolean equals(Object o) {
@@ -69,9 +79,6 @@ public class Student {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        /*
-         *equals() method
-         */
         Student student = (Student) o;
         return universityRollNoOfStudent == student.universityRollNoOfStudent &&
                 getNoOfBooksIssuedByStudent() == student.getNoOfBooksIssuedByStudent() &&
@@ -93,7 +100,6 @@ public class Student {
     // * toString() method
     // *
 
-
     @Override
     public String toString() {
         return "Student{" +
@@ -106,7 +112,7 @@ public class Student {
 
     //*
     // * this method checks the name of the book student wants
-    // * @para name the name of the book student wants
+    // * @param name the name of the book student wants
     public void issueNewBook(String nameOfBook) {
         System.out.println("The Book : " + nameOfBook + " Is Issued To You Successfully.");
         namesOfTheBooksIssued[numberOfBooks].setNameOfTheBook(nameOfBook);
@@ -116,7 +122,7 @@ public class Student {
 
     //*
     // * this method checks the name of the books the student wants to return.
-    // *@para nameOfBookToBeReturned the names of the books to be returned
+    // *@param nameOfBookToBeReturned the names of the books to be returned
     public void returnBooks(String nameOfBookToBeReturned) {
         System.out.println("The Book : " + nameOfBookToBeReturned + "Is Returned Successfully To The Library.");
         System.out.println();
@@ -124,7 +130,7 @@ public class Student {
 
     //*
     // * this method checks all the issue books to the student
-    // *@para nameOfAllIssueBooks the names of all the issue books
+    // *@param nameOfAllIssueBooks the names of all the issue books
     public void allIssuesBooks(String nameOfAllIssueBooks) {
         System.out.println(nameOfAllIssueBooks);
     }

@@ -13,7 +13,8 @@ public class Student {
     private String nameOfTheStudent;
     private long universityRollNoOfStudent;
     private int noOfBooksIssuedByStudent;
-    private Book[] namesOfTheBooksIssued;
+    private Book[] namesOfTheBooksIssued = new Book[10];
+    private int numberOfBooks = 0;
 
     public String getNameOfTheStudent() {
         return nameOfTheStudent;
@@ -41,9 +42,8 @@ public class Student {
 
 
     public Student() {
-        this.namesOfTheBooksIssued = new Book[10];
         for (int i = 0; i < namesOfTheBooksIssued.length; i++) {
-            namesOfTheBooksIssued[i] = new Book();
+            namesOfTheBooksIssued[i] = new Book("Book " + (i + 1));
         }
     }
 
@@ -53,7 +53,7 @@ public class Student {
 
 
     public Book[] getNamesOfTheBooksIssued() {
-        return namesOfTheBooksIssued;
+        return namesOfTheBooksIssued.clone();
     }
 
     public void setNamesOfTheBooksIssued(Book[] namesOfTheBooksIssued) {
@@ -70,7 +70,7 @@ public class Student {
             return false;
         }
         /*
-         *equals() mehtod
+         *equals() method
          */
         Student student = (Student) o;
         return universityRollNoOfStudent == student.universityRollNoOfStudent &&
@@ -108,14 +108,18 @@ public class Student {
     // * this method checks the name of the book student wants
     // * @para name the name of the book student wants
     public void issueNewBook(String nameOfBook) {
-        System.out.println(nameOfBook);
+        System.out.println("The Book : " + nameOfBook + " Is Issued To You Successfully.");
+        namesOfTheBooksIssued[numberOfBooks].setNameOfTheBook(nameOfBook);
+        numberOfBooks++;
+        System.out.println();
     }
 
     //*
     // * this method checks the name of the books the student wants to return.
     // *@para nameOfBookToBeReturned the names of the books to be returned
     public void returnBooks(String nameOfBookToBeReturned) {
-        System.out.println(nameOfBookToBeReturned);
+        System.out.println("The Book : " + nameOfBookToBeReturned + "Is Returned Successfully To The Library.");
+        System.out.println();
     }
 
     //*

@@ -37,7 +37,7 @@ public class FrontDesk {
                     myStudent.issueNewBook(nameOfTheBook);
                     break;
                 case RETURN_PREVIOUSLY_ISSUES_BOOK_FOR_ME:
-                    System.out.println("Enter The Name Of The Book That You Want To Return : ");
+                    System.out.println("Enter The Name Of The Books That You Want To Return : ");
                     scanner.nextLine();
                     String nameOfReturnBooks = scanner.nextLine();
                     myStudent.returnBooks(nameOfReturnBooks);
@@ -52,7 +52,7 @@ public class FrontDesk {
                     System.out.println("Thanks For Coming.");
                     break;
                 default:
-                    System.out.println("Wrong Choice. Choose Between 1-4:");
+                    System.out.println("Wrong Choice. Choose Between 1..4:");
                     break;
             }
         } while (studentInput != EXIT);

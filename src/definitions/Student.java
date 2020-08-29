@@ -26,10 +26,15 @@ public class Student {
         this.namesOfTheBooksIssued = namesOfTheBooksIssued;
     }
 
+    //* this method returns the name of the student
+    // *
     public String getNameOfTheStudent() {
         return nameOfTheStudent;
     }
 
+    //* this method sets the name of the student
+    // * @param name of the student
+    // *
     public void setNameOfTheStudent(String nameOfTheStudent) {
         this.nameOfTheStudent = nameOfTheStudent;
     }
@@ -41,6 +46,8 @@ public class Student {
         return universityRollNoOfStudent;
     }
 
+    // this method set the unuiversityRollNoOfStudent
+    //@ param unuiversityRollNoOfStudent
     public void setUniversityRollNoOfStudent(long universityRollNoOfStudent) {
         this.universityRollNoOfStudent = universityRollNoOfStudent;
     }
@@ -52,6 +59,9 @@ public class Student {
         return noOfBooksIssuedByStudent;
     }
 
+    //* this mehtod sets the noOfBooksIssuedByStudent
+    // * @param noOfBooksIssuedByStudent
+    // *
     public void setNoOfBooksIssuedByStudent(int noOfBooksIssuedByStudent) {
         this.noOfBooksIssuedByStudent = noOfBooksIssuedByStudent;
     }
@@ -63,6 +73,9 @@ public class Student {
         return namesOfTheBooksIssued.clone();
     }
 
+    //*
+    // this method sets the namesOfTheBooksIssued
+    // * @param namesOfTheBooksIssued
     public void setNamesOfTheBooksIssued(Book[] namesOfTheBooksIssued) {
         this.namesOfTheBooksIssued = namesOfTheBooksIssued;
     }

@@ -37,7 +37,8 @@ public class Book {
     public String getNameOfTheBook() {
         return nameOfTheBook;
     }
-
+    //* this method sets the name of the book
+    //* @param name of the book
     public void setNameOfTheBook(String nameOfTheBook) {
         this.nameOfTheBook = nameOfTheBook;
     }
@@ -49,7 +50,8 @@ public class Book {
 
         return nameOfTheAuthorOfBook;
     }
-
+    //** this method sets the name of the author of the book
+    //** @param name of the author of the book
     public void setNameOfTheAuthorOfBook(String nameOfTheAuthorOfBook) {
 
         this.nameOfTheAuthorOfBook = nameOfTheAuthorOfBook;
@@ -61,7 +63,8 @@ public class Book {
     public String getiSBNNoOfTheBook() {
         return iSBNNoOfTheBook;
     }
-
+    // * this method sets the ISBN no of the book
+    //* @param iSBN no of the book
     public void setiSBNNoOfTheBook(String iSBNNoOfTheBook) {
         this.iSBNNoOfTheBook = iSBNNoOfTheBook;
     }

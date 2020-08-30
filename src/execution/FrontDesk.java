@@ -19,7 +19,7 @@ public class FrontDesk {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int studentInput;
-        Student myStudentDeatils = new Student();
+        Student myStudentDetails = new Student();
         do {
             System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
             System.out.println("how may can i help you today");
@@ -34,7 +34,7 @@ public class FrontDesk {
                     System.out.println("enter the name of the book you want");
                     scanner.nextLine();
                     String nameOfTheBook = scanner.nextLine();
-                    myStudentDeatils.issueNewBook(nameOfTheBook);
+                    myStudentDetails.issueNewBook(nameOfTheBook);
                     break;
                 case RETURN_PREVIOUSLY_ISSUES_BOOK_FOR_ME:
                     System.out.println("Enter The Name Of The Books That You Want To Return : ");

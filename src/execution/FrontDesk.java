@@ -21,7 +21,7 @@ public class FrontDesk {
         int studentInput;
         Student myStudentDeatils = new Student();
         do {
-            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n");
+            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
             System.out.println("how may can i help you today");
             System.out.println("1.issue a new book for me");
             System.out.println("2.Return previously issues book for me");

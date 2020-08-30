@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
-    private String nameOfTheStudent;
+    private String nameOfTheStudent; // first name, middle name, last name
     private long universityRollNoOfStudent;
     private int noOfBooksIssuedByStudent;
     private Book[] namesOfTheBooksIssued = new Book[10];
